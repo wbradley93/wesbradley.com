@@ -35,12 +35,18 @@
                 color: #029adb;
             }
         </style>
+        <script>
+            function obfuscatedMailTo() {
+                const encodedEmail = 'd29ya0B3ZXNicmFkbGV5LmNvbQ=='
+                window.open(`mailto:${atob(encodedEmail)}`);
+            }
+        </script>
     </head>
     <body>
         <header>
             <h1>Wes Bradley</h1>
             <h4>Software Engineer</h4>
-            <h6><a href="mailto:work@wesbradley.com">email</a> | <a href="https://github.com/wbradley93">github</a></h6>
+            <h6><a href="#" onclick="javascript:obfuscatedMailTo()">email</a> | <a href="https://github.com/wbradley93">github</a></h6>
         </header>
 
         <p>I'm currently available for hire on a contract basis.</p>
@@ -67,7 +73,7 @@
 
         <hr />
         <footer>
-            <h6>&copy; 2023 | work@wesbradley.com</h6>
+            <h6>&copy; 2024 | work(a)wesbradley.com</h6>
         </footer>
     </body>
 </html>
